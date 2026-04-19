@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maddula Naga Teja | AI & Automation Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #020617;
+            --card: rgba(15, 23, 42, 0.7);
+            --accent: #38bdf8;
+            --text: #f8fafc;
+            --muted: #94a3b8;
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            background: radial-gradient(circle at top right, #1e293b 0%, #020617 60%);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+
+        /* Navigation - Logo Updated */
+        nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 60px; }
+        .logo { font-weight: 800; font-size: 1.3rem; letter-spacing: 1px; color: var(--accent); text-decoration: none; }
+
+        .hero h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); margin: 0; font-weight: 800; line-height: 1.1; letter-spacing: -2px; }
+        .hero .title { color: var(--accent); font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-top: 10px; }
+        .hero .about { color: var(--muted); font-size: 1.1rem; margin: 25px 0 40px; max-width: 650px; }
+
+        /* Social Icons (Direct SVGs for instant loading) */
+        .social-links { display: flex; gap: 15px; }
+        .btn-social { 
+            display: flex; align-items: center; justify-content: center;
+            background: var(--card); border: 1px solid var(--border);
+            color: var(--text); width: 48px; height: 48px; border-radius: 12px;
+            text-decoration: none; transition: 0.3s;
+        }
+        .btn-social svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+        .btn-social:hover { border-color: var(--accent); background: rgba(56, 189, 248, 0.1); transform: translateY(-3px); color: var(--accent); }
+
+        /* Technical Expertise (Tighter Padding) */
+        .section-title { font-size: 0.9rem; font-weight: 800; margin: 60px 0 20px; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; }
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag { 
+            background: rgba(56, 189, 248, 0.05); 
+            color: var(--accent); 
+            padding: 4px 10px; 
+            border-radius: 6px; 
+            font-size: 0.85rem; 
+            border: 1px solid rgba(56, 189, 248, 0.15); 
+            font-weight: 500; 
+        }
+
+        /* Project Cards */
+        .bento { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .card { 
+            background: var(--card); border: 1px solid var(--border); 
+            border-radius: 28px; padding: 35px; backdrop-filter: blur(10px);
+            transition: 0.3s;
+        }
+        .card:hover { border-color: var(--accent); background: rgba(15, 23, 42, 0.9); }
+        .full-width { grid-column: span 2; }
+
+        h3 { font-size: 1.4rem; margin: 0 0 10px; font-weight: 700; color: var(--text); }
+        .project-desc { color: var(--muted); font-size: 0.95rem; margin-bottom: 20px; }
+
+        footer { margin-top: 100px; padding: 40px 0; text-align: center; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--border); }
+
+        @media (max-width: 768px) {
+            .bento { grid-template-columns: 1fr; }
+            .full-width { grid-column: span 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="#" class="logo">MNT.DEV</a>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/nagatejam16/" class="btn-social" target="_blank">
+                    <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="mailto:nagateja2003@gmail.com" class="btn-social">
+                    <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </div>
+        </nav>
+
+        <header class="hero">
+            <h1>Maddula Naga Teja.</h1>
+            <div class="title">AI & Automation Engineer</div>
+            <p class="about">
+                I’m a developer focused on building autonomous systems that simplify complex data workflows. 
+                I specialize in integrating AI with enterprise tools like Salesforce to create functional, 
+                end-to-end solutions that drive business impact.
+            </p>
+        </header>
+
+        <div class="section-title">Technical Expertise</div>
+        <div class="card full-width" style="padding: 25px;">
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Salesforce (Apex/LWC)</span>
+                <span class="tag">C Programming</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Flask</span>
+                <span class="tag">SQL</span>
+                <span class="tag">REST API Design</span>
+                <span class="tag">AI LLM Integration</span>
+                <span class="tag">Data Structures</span>
+            </div>
+        </div>
+
+        <div class="section-title">Project Portfolio</div>
+        <main class="bento">
+            
+            <div class="card full-width">
+                <h3>Account Intelligence Engine</h3>
+                <p class="project-desc">An autonomous AI research pipeline that identifies anonymous website visitors and generates detailed company profiles. It uses Python agents for web research and integrates with Salesforce to deliver live intent scores and AI-summarized insights.</p>
+                <div class="tags">
+                    <span class="tag">Python</span><span class="tag">Salesforce API</span><span class="tag">AI Agents</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Animal Binary Classification</h3>
+                <p class="project-desc">A deep learning application using a CNN model trained with TensorFlow on 2,000+ images. Built a Flask frontend to facilitate real-time image uploads and provide immediate classification predictions.</p>
+                <div class="tags">
+                    <span class="tag">TensorFlow</span><span class="tag">Flask</span><span class="tag">Computer Vision</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Customer Churn Prediction</h3>
+                <p class="project-desc">Analyzed historical telecom datasets using SQL and Python to identify churn patterns. Built predictive models to evaluate risk factors and optimize customer retention strategies.</p>
+                <div class="tags">
+                    <span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Predictive Modeling</span>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            &copy; 2026 Maddula Naga Teja.
+        </footer>
+    </div>
+
+</body>
+</html>
